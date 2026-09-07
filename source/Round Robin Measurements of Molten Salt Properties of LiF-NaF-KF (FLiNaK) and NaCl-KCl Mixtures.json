@@ -1,0 +1,30 @@
+{
+    "source": "Round Robin Measurements of Molten Salt Properties for LiF-NaF-KF (FLiNaK) and NaCl-KCl Mixtures",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.jced.5c00421",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "FLiNaK",
+            "composition": [
+                {
+                    "id": 1,
+                    "LiF": 0.4500,
+                    "NaF": 0.1370,
+                    "KF": 0.4130,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "density",
+                            "value": "2.45-6.85*10**(-4)*T",
+                            "unit": "g/cm^3",
+                            "temperature_range": "480-800 C",
+                            "uncertainty": "not reported",
+			                "comment": "T is temperature in degrees Celsius. The correlation was obtained by treating the density measurements from all round-robin participants as one combined data set. 5% of maximum residual"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

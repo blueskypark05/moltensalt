@@ -1,0 +1,54 @@
+{
+  "source": "Thermophysical Properties of FUNaK (NaF-KF-UF4) Eutectics",
+  "url": "https://doi.org/10.3390/ma17112776",
+  "experiment": [
+    {
+      "id": 1,
+      "name": "NaF-KF-UF4",
+      "composition": [
+        {
+          "id": 1,
+          "NaF": 0.556,
+          "KF": 0.187,
+          "UF4": 0.257,
+          "unit": "mole fraction",
+          "thermal_properties": [
+            {
+              "id": 1,
+              "property": "density",
+              "value": "4.8015-0.0012*T",
+              "unit": "g/cm^3",
+              "temperature_range": "560-900 C",
+              "uncertainty": "5%",
+              "comment": "T is in degrees Celsius."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "NaF-KF-UF4",
+      "composition": [
+        {
+          "id": 1,
+          "NaF": 0.504,
+          "KF": 0.232,
+          "UF4": 0.264,
+          "unit": "mole fraction",
+          "thermal_properties": [
+            {
+              "id": 1,
+              "property": "density",
+              "value": "4.5722-0.0009*T",
+              "unit": "g/cm^3",
+              "temperature_range": "600-900 C",
+              "uncertainty": "5%",
+              "comment": "T is in degrees Celsius."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

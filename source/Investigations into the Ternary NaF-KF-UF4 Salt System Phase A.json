@@ -1,0 +1,48 @@
+{
+  "source": "Investigations into the Ternary NaF-KF-UF4 Salt System - Phase A",
+  "url": "https://inldigitallibrary.inl.gov/content/uploads/50/2026/04/Sort_135739.pdf",
+  "experiment": [
+    {
+      "id": 1,
+      "name": "NaF-KF-UF4",
+      "composition": [
+        {
+          "id": 1,
+          "NaF": 0.489,
+          "KF": 0.247,
+          "UF4": 0.264,
+          "unit": "mole fraction",
+          "thermal_properties": [
+            {
+              "id": 1,
+              "property": "density",
+              "value": "4.7509-0.00113*T",
+              "unit": "g/cm^3",
+              "temperature_range": "568-845 C",
+              "uncertainty": "1.1%",
+              "comment": "T is in degrees Celsius."
+            },
+            {
+              "id": 2,
+              "property": "viscosity",
+              "value": "736.58*exp(-0.006*T)",
+              "unit": "mPa*s",
+              "temperature_range": "595-797 C",
+              "uncertainty": "approximately 13-23%",
+              "comment": "T is in degrees Celsius. R^2 = 0.9482 is a fit-quality metric."
+            },
+            {
+              "id": 3,
+              "property": "heat capacity",
+              "value": "106.1",
+              "unit": "J/(mol*K)",
+              "temperature_range": "600-800 C",
+              "uncertainty": "1.2%",
+              "comment": "Reported as temperature-independent over the stated range."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

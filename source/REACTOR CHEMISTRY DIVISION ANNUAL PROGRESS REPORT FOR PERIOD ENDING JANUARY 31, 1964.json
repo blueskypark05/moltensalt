@@ -1,0 +1,28 @@
+{
+    "source": "REACTOR CHEMISTRY DIVISION ANNUAL PROGRESS REPORT FOR PERIOD ENDING JANUARY 31, 1964. ORNL-3591",
+    "url": "https://www.osti.gov/biblio/4000934",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "FLiBe",
+            "composition":[
+                {
+                    "id": 1,
+                    "LiF": 0.6600,
+                    "BeF2": 0.3400,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "0.116*exp(3755/T)",
+                            "unit": "centipoise",
+                            "temperature_range": "748-898 K",
+                            "uncertainty": "None"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

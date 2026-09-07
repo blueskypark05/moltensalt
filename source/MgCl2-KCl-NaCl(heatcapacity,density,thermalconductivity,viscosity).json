@@ -1,0 +1,55 @@
+{
+	"source": "Engineering molten MgCl2–KCl–NaCl salt for high-temperature thermal energy storage: Review on salt properties and corrosion control strategies",
+	"url": "https://doi.org/10.1016/j.solmat.2021.111344",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "MgCl2-KCl-NaCl",
+			"composition": [
+				{
+					"id": 1,
+					"MgCl2": 0.471,
+					"KCl": 0.227,
+					"NaCl": 0.302,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "heat capacity",
+							"value": "1.10",
+							"unit": "J/(g C)",
+							"temperature_range": "420-800 C",
+							"uncertainty": "< 9%",
+							"comment": "열용량 값의 변화가 2% 미만으로 미미해 상수의 값을 가짐"
+						},
+						{
+							"id": 2,
+							"property": "density",
+							"value": "1.94-4.2*10**-4*T",
+							"unit": "g/cm^3",
+							"temperature_range": "420-800 C",
+							"uncertainty": "< 6%"
+						},
+						{
+							"id": 3,
+							"property": "thermal conductivity",
+							"value": "0.53-1.32*10**-4*T",
+							"unit": "W/(m C)",
+							"temperature_range": "420-800 C",
+							"uncertainty": "< 10%"
+						},
+						{
+							"id": 4,
+							"property": "viscosity",
+							"value": "27.728*exp(-0.00364*T)",
+							"unit": "mPa s",
+							"temperature_range": "420-800 C",
+							"uncertainty": "> 10%",
+							"comment": "dynamic viscosity"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+  "source": "Completion of Transport Property Measurements on Multiple Actinide Fluoride Mixtures, ORNL/TM-2025/4057",
+  "url": "https://www.osti.gov/biblio/3002248",
+  "experiment": [
+    {
+      "id": 1,
+      "name": "NaF-KF-UF4",
+      "composition": [
+        {
+          "id": 1,
+          "NaF": 0.5705,
+          "KF": 0.1604,
+          "UF4": 0.2691,
+          "unit": "mole fraction",
+          "thermal_properties": [
+            {
+              "id": 1,
+              "property": "viscosity",
+              "value": "0.0119*exp(6696.33/T)",
+              "unit": "cP",
+              "temperature_range": "878.02-1025.04 K",
+              "uncertainty": "3.8-6.4%",
+              "comment": "T is in kelvin. The uncertainty range is calculated from individual measurement errors; no single uncertainty was reported for the fitted correlation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+	"source": "Thermophysical properties of liquid chlorides from 600 to 1600 K: Melt point, enthalpy of fusion, and volumetric expansion",
+	"url": "https://doi.org/10.1016/j.molliq.2021.118147",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "NaCl-UCl3",
+			"composition": [
+				{
+					"id": 1,
+					"NaCl": 1.0000,
+					"UCl3": 0.0000,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.1470-0.5521*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "1077-1300 K",
+							"uncertainty": "±0.01"
+						}
+					]
+				},
+				{
+					"id": 2,
+					"NaCl": 0.9944,
+					"UCl3": 0.0056,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.1841-0.5562*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "1074-1300 K",
+							"uncertainty": "±0.01"
+						}
+					]
+				},
+				{
+					"id": 3,
+					"NaCl": 0.9887,
+					"UCl3": 0.0113,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.2253-0.5919*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "1066-1300 K",
+							"uncertainty": "±0.01"
+						}
+					]
+				},
+				{
+					"id": 4,
+					"NaCl": 0.9840,
+					"UCl3": 0.0160,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.2075-0.5655*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "980-1270 K",
+							"uncertainty": "N/A"
+						}
+					]
+				},
+				{
+					"id": 5,
+					"NaCl": 0.9754,
+					"UCl3": 0.0246,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.3424-0.5978*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "1056-1300 K",
+							"uncertainty": "±0.01"
+						}
+					]
+				},
+				{
+					"id": 6,
+					"NaCl": 0.9675,
+					"UCl3": 0.0325,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.3680-0.5822*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "1048-1300 K",
+							"uncertainty": "±0.01"
+						}
+					]
+				},
+				{
+					"id": 7,
+					"NaCl": 0.9130,
+					"UCl3": 0.0870,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.7796-0.6828*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "980-1270 K",
+							"uncertainty": "N/A"
+						}
+					]
+				},
+				{
+					"id": 8,
+					"NaCl": 0.8560,
+					"UCl3": 0.1440,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.9598-0.6673*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "998-1167 K",
+							"uncertainty": "±0.001"
+						}
+					]
+				},
+				{
+					"id": 9,
+					"NaCl": 0.8550,
+					"UCl3": 0.1450,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "3.1727-0.7854*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "974-1300 K",
+							"uncertainty": "±0.014"
+						}
+					]
+				},
+				{
+					"id": 10,
+					"NaCl": 0.7530,
+					"UCl3": 0.2470,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "4.2900-1.5903*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "980-1270 K",
+							"uncertainty": "N/A"
+						}
+					]
+				},
+				{
+					"id": 11,
+					"NaCl": 0.7510,
+					"UCl3": 0.2490,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "3.4938-0.7821*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "900-1141 K",
+							"uncertainty": "±0.002"
+						}
+					]
+				},
+				{
+					"id": 12,
+					"NaCl": 0.7160,
+					"UCl3": 0.2840,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "3.8456-0.8846*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "825-1300 K",
+							"uncertainty": "±0.019"
+						}
+					]
+				},
+				{
+					"id": 13,
+					"NaCl": 0.6670,
+					"UCl3": 0.3330,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "3.8604-0.8371*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "892-1142 K",
+							"uncertainty": "±0.001"
+						}
+					]
+				},
+				{
+					"id": 14,
+					"NaCl": 0.6600,
+					"UCl3": 0.3400,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "4.2235-1.0347*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "796-1300 K",
+							"uncertainty": "±0.02"
+						}
+					]
+				},
+				{
+					"id": 15,
+					"NaCl": 0.5960,
+					"UCl3": 0.4040,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "4.5384-1.1302*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "863-1300 K",
+							"uncertainty": "±0.021"
+						}
+					]
+				},
+				{
+					"id": 16,
+					"NaCl": 0.5940,
+					"UCl3": 0.4060,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "4.1966-0.9072*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "898-1137 K",
+							"uncertainty": "±0.001"
+						}
+					]
+				},
+				{
+					"id": 17,
+					"NaCl": 0.5050,
+					"UCl3": 0.4950,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "4.4738-0.9304*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "951-1143 K",
+							"uncertainty": "±0.002"
+						}
+					]
+				},
+				{
+					"id": 18,
+					"NaCl": 0.4620,
+					"UCl3": 0.5380,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "6.6390-3.0582*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "980-1270 K",
+							"uncertainty": "N/A"
+						}
+					]
+				},
+				{
+					"id": 19,
+					"NaCl": 0.4010,
+					"UCl3": 0.5990,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "4.8964-1.0470*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "998-1148 K",
+							"uncertainty": "±0.001"
+						}
+					]
+				},
+				{
+					"id": 20,
+					"NaCl": 0.3000,
+					"UCl3": 0.7000,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "5.2035-1.0504*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "1041-1195 K",
+							"uncertainty": "±0.003"
+						}
+					]
+				},
+				{
+					"id": 21,
+					"NaCl": 0.1500,
+					"UCl3": 0.8500,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "5.5847-1.0869*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "1096-1218 K",
+							"uncertainty": "±0.002"
+						}
+					]
+				},
+				{
+					"id": 22,
+					"NaCl": 0.0000,
+					"UCl3": 1.0000,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "6.2739-1.5194*10**(-3)*T",
+							"unit": "g/cm^3",
+							"temperature_range": "1116-1300 K",
+							"uncertainty": "±0.029"
+						}
+					]
+				}
+			]
+		}
+	]
+}

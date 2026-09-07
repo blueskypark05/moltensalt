@@ -1,0 +1,30 @@
+{
+	"source": "Fusion properties and heat capacities of the eutectic lithium fluoride-sodium fluoride-potassium fluoride melt",
+	"url": "https://pubs.acs.org/doi/abs/10.1021/je00029a041",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "FLiNaK",
+			"composition": [
+				{
+					"id": 1,
+					"LiF": 0.465,	
+					"NaF": 0.115,
+					"KF": 0.42,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "heat capacity",
+							"value": "9.6360+10.487*10**-3*(T)",
+							"unit": "cal/mol-K",
+							"temperature_range": "750-860 K",
+							"uncertainty": "2%",
+							"comment": "상관식 온도 단위는 K"
+						}
+					]
+				}
+			]
+		}
+	]
+}

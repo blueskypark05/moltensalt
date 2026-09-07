@@ -1,0 +1,30 @@
+{
+	"source": "Physical Properties of Molten Reactor Fuels and Coolants",
+	"url": "https://www.tandfonline.com/doi/epdf/10.13182/NSE63-5?needAccess=true",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "NaF-KF-UF4",
+			"composition": [
+				{
+					"id": 1,
+					"NaF": 0.465,
+					"KF": 0.26,
+					"UF4": 0.275,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "thermal conductivity",
+							"value": "0.8619",
+							"unit": "W/m-K",
+							"temperature_range": "NA",
+							"uncertainty": "25%",
+							"comment": "Applicable T range cannot be found"
+						}
+					]
+				}
+			]
+		}
+	]
+}

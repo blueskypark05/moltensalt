@@ -1,0 +1,30 @@
+{
+	"source": "Enthalpies and heat capacity of solid and molten salt fluoride mixtures",
+	"url": "https://www.osti.gov/servlets/purl/4794927/",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "NaF-KF-UF4",
+			"composition": [
+				{
+					"id": 1,
+					"NaF": 0.465,
+					"KF": 0.26,
+					"UF4": 0.275,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "heat capacity",
+							"value": "0.23",
+							"unit": "cal/g-celsius",
+							"temperature_range": "813.15-1273.15 K",
+							"uncertainty": "16%",
+							"comment": "Constant heat capacity, 상수이기에 실험 오차지만 상관식 오차로 사용해도 무방할 것 같음"
+						}
+					]
+				}
+			]
+		}
+	]
+}

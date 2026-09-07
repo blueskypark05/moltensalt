@@ -1,0 +1,80 @@
+{
+    "source": "Evaluation of bubbler sensors for In Situ measurement of density, liquid depth, and surface tension in molten salts",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666821126001833",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "MgCl2-NaCl",
+            "composition":[
+                {
+                    "id": 1,
+                    "NaCl": 0.20,
+                    "MgCl2": 0.80,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "density",
+                            "value": "2.05968-4.97145*10**(-4)*T",
+                            "unit": "g/cm^3",
+                            "temperature_range": "700-820 C",
+                            "uncertainty": "None",
+                            "comment": "온도 범위는 확실치 않음. 그래프를 통한 추정값"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "NaCl": 0.40,
+                    "MgCl2": 0.60,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "density",
+                            "value": "2.08522-5.57461*10**(-4)*T",
+                            "unit": "g/cm^3",
+                            "temperature_range": "600-800 C",
+                            "uncertainty": "None",
+                            "comment": "온도 범위는 확실치 않음. 그래프를 통한 추정값"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "NaCl": 0.57,
+                    "MgCl2": 0.43,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "density",
+                            "value": "2.07783-5.98041*10**(-4)*T",
+                            "unit": "g/cm^3",
+                            "temperature_range": "500-750 C",
+                            "uncertainty": "None",
+                            "comment": "온도 범위는 확실치 않음. 그래프를 통한 추정값"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "NaCl": 0.80,
+                    "MgCl2": 0.20,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "density",
+                            "value": "1.98708-5.18246*10**(-4)*T",
+                            "unit": "g/cm^3",
+                            "temperature_range": "700-910 C",
+                            "uncertainty": "None",
+                            "comment": "온도 범위는 확실치 않음. 그래프를 통한 추정값"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

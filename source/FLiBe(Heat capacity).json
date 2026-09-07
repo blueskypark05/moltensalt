@@ -1,0 +1,28 @@
+{
+	"source": "MOLTEN-SALT REACTOR PROGRAM SEMIANNUAL PROGRESS REPORT For Period Ending August 31, 1968, ORNL-4344",
+	"url": "http://www.osti.gov/servlets/purl/4805939",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "FLiBe",
+			"composition": [
+				{
+					"id": 1,
+					"LiF": 0.66,
+					"BeF2": 0.34,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "heat capacity",
+							"value": "0.577",
+							"unit": "cal/g*C",
+							"temperature_range": "500-720 K",
+							"uncertainty": "1.4%"
+						}
+					]
+				}
+			]
+		}
+	]
+}

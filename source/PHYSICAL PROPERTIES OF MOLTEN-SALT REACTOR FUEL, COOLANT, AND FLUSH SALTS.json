@@ -1,0 +1,40 @@
+{
+    "source": "PHYSICAL PROPERTIES OF MOLTEN-SALT REACTOR FUEL, COOLANT, AND FLUSH SALTS",
+    "url": "https://www.osti.gov/biblio/4492893",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "FLiBe",
+            "composition":[
+                {
+                    "id": 1,
+                    "LiF": 0.66,
+                    "BeF2": 0.34,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "0.116*exp(3755/T)",
+                            "unit": "centipoise",
+                            "temperature_range": "873-1073 K",
+                            "uncertainty": "15%",
+                            "comment_uncertainty":"systematic error와 random error를 합산한 값으로, 신뢰 수준은 명시되지 않음, 상관식 오차가 아님",
+                            "comment": "온도 범위는 나와있지 않으나 ORNL/TM-2021/2239 보고서에 따르면 873-1073 K 범위에서 유효함."
+                        },
+                        {
+                            "id": 2,
+                            "property": "thermal conductivity",
+                            "value": 0.010,
+                            "unit": "W/cm-K",
+                            "temperature_range": "573 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty":"systematic error와 random error를 합산한 값으로, 신뢰 수준은 명시되지 않음, 상관식 오차가 아님",
+                            "comment": "온도에 따른 변화가 오차율보다 적었음. 200°C 근처 구간에서 값"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

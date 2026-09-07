@@ -1,0 +1,60 @@
+{
+    "source": "REACTOR CHEMISTRY DIVISION ANNUAL PROGRESS REPORT FOR PERIOD ENDING DECEMBER 31, 1965. ORNL-3913",
+    "url": "https://moltensalt.org/references/static/downloads/pdf/ORNL-3913.pdf",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "FLiBe",
+            "composition":[
+                {
+                    "id": 1,
+                    "LiF": 0.6400,
+                    "BeF2": 0.3600,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(2000/T-1.226)",
+                            "unit": "centipoise",
+                            "temperature_range": "735-873 K",
+                            "uncertainty": "None"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "LiF": 0.6000,
+                    "BeF2": 0.4000,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(2203/T-1.367)",
+                            "unit": "centipoise",
+                            "temperature_range": "714-910 K",
+                            "uncertainty": "None"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "LiF": 0.5500,
+                    "BeF2": 0.4500,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(2589/T-1.685)",
+                            "unit": "centipoise",
+                            "temperature_range": "692-911 K",
+                            "uncertainty": "None"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

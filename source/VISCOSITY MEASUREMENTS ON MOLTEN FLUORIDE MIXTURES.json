@@ -1,0 +1,80 @@
+    {
+    "source": "VISCOSITY MEASUREMENTS ON MOLTEN FLUORIDE MIXTURES",
+    "url": "https://www.osti.gov/biblio/4803933",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "FLiNaK",
+            "composition":[
+                {
+                    "id": 1,
+                    "LiF": 0.4650,
+                    "NaF": 0.1150,
+                    "KF": 0.4200,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "0.0400*e**(4170/T)",
+                            "unit": "centipoise",
+                            "temperature_range": "773-1073 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "실험 오차",
+                            "comments": "12번 물질, ref 16 => 내부보고서"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "FLiBe",
+            "composition":[
+                {
+                    "id": 1,
+                    "LiF": 0.6900,
+                    "BeF2": 0.3100,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "0.118*e**(3624/T)",
+                            "unit": "centipoise",
+                            "temperature_range": "873-1073 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "실험 오차",
+                            "comments": "74번 물질, ref 12, 20 => 내부보고서"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "NaF-KF-UF4",
+            "composition":[
+                {
+                    "id": 1,
+                    "UF4": 0.2750,
+                    "NaF": 0.4650,
+                    "KF": 0.2600,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "0.0767*e**(4731/T)",
+                            "unit": "centipoise",
+                            "temperature_range": "873-1173 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "실험 오차",
+                            "comments": "2번 물질, ref 15 => 내부보고서"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

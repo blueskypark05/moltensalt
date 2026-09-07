@@ -1,0 +1,48 @@
+{
+	"source": "A SUMMARY OF DENSITY MEASUREMENTS ON MOLTEN FLUORIDE MIXTURES AND A CORRELATION FOR PREDICTING DENSITIES OF FLUORIDE MIXTURES",
+	"url": "https://info.ornl.gov/sites/publications/Files/Pub174489.pdf",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "NaF-KF-UF4",
+			"composition": [
+				{
+					"id": 1,
+					"NaF": 0.465,
+					"KF": 0.26,
+					"UF4": 0.275,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "4.7-0.00115*(T)",
+							"unit": "g/cm**3",
+							"temperature_range": "600-900 C",
+							"uncertainty": "3%",
+							"comment": "상관식 온도 단위는 Celsius"
+						}
+					]
+				},
+				{
+					"id": 2,
+					"NaF": 0.482,
+					"KF": 0.268,
+					"UF4": 0.25,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "4.54-0.00110*(T)",
+							"unit": "g/cm**3",
+							"temperature_range": "600-900 C",
+							"uncertainty": "3%",
+							"comment": "상관식 온도 단위는 Celsius"
+						}
+					]
+				}
+			]
+		}
+	]
+}

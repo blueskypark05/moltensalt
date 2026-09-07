@@ -1,0 +1,48 @@
+{
+    "materials": {
+            "MgCl2-NaCl": ["MgCl2", "NaCl"],
+            "LiCl-KCl": ["LiCl", "KCl"],
+            "MgCl2-KCl-NaCl": ["MgCl2", "KCl", "NaCl"],
+            "KCl-MgCl2": ["KCl", "MgCl2"],
+            "FLiBe": ["LiF", "BeF2"],
+            "NaF-KF-UF4": ["NaF", "KF", "UF4"],
+            "FLiNaK": ["LiF", "NaF", "KF"],
+            "NaCl-UCl3": ["NaCl", "UCl3"]
+        },
+    "composition": {
+            "UF4": 314.02,
+            "NaCl": 58.44,
+            "MgCl2": 95.21,
+            "UCl3": 344.39,
+            "BeF2": 47.01,
+            "KCl": 74.55,
+            "NaF": 41.99,
+            "LiF": 25.94,
+            "LiCl": 42.39,
+            "KF": 58.10
+        },
+    "properties": [
+        "density", 
+        "viscosity", 
+        "surface tension", 
+        "thermal conductivity", 
+        "heat capacity"
+        ],
+    "units": {
+        "density": {"g/cm^3": "Y", "g/cm**3": "Y", "kg/m^3": "Y*0.001"},
+        "viscosity": {"Pa·s": "Y", "mPa s": "Y*0.001", "centipoise": "Y*0.001", "poise": "Y*0.1", "mPa*s": "Y*0.001",
+        "cP": "Y*0.001", "mPa·s": "Y*0.001", "Pa*s":"Y"},
+        "surface tension": {"dyn/cm": "Y"},
+        "thermal conductivity": {"W/(m·K)": "Y", "W/m-K": "Y", "W/(m C)": "Y", "W/cm-K": "100*Y"},
+        "heat capacity": {"J/(g·K)": "Y", "J/g·K": "Y", "cal/g*C": "Y*4.184", "cal/g-celsius": "Y*4.184", "J/(g C)":"Y",
+        "cal/mol*K": "Y*4.184/M", "J/(mol*K)": "Y/M", "J/mol-K": "Y/M", "cal/(mol*deg)": "Y*4.184/M", "cal/mol-K": "Y*4.184/M"},
+        "temperature": {"C": "Y+273.15", "K": "Y", "°C": "Y+273.15"}
+    },
+    "base_units": {
+        "density": "$g/cm^3$",
+        "viscosity": "$Pa·s$",
+        "surface tension": "$dyn/cm$",
+        "thermal conductivity": "$W/(m·K)$",
+        "heat capacity": "$J/(g·K)$"
+    }
+}

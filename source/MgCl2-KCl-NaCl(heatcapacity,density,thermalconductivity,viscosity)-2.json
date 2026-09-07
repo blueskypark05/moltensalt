@@ -1,0 +1,54 @@
+{
+	"source": "Thermophysical Properties Experimentally Tested for NaCl-KCl-MgCl2 Eutectic Molten Salt as a Next-Generation High-Temperature Heat Transfer Fluids in Concentrated Solar Power Systems,",
+
+	"url": "https://www.osti.gov/servlets/purl/1866380",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "MgCl2-KCl-NaCl",
+			"composition": [
+				{
+					"id": 1,
+					"MgCl2": 0.4598,
+					"KCl": 0.3891,
+					"NaCl":  0.1511,
+					"unit": "mass fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "1958.8438-0.56355*T",
+							"unit": "kg/m^3",
+							"temperature_range": "450-700 C",
+							"uncertainty": "±15.27 kg/m^3"
+						},
+						{
+							"id": 2,
+							"property": "thermal conductivity",
+							"value": "0.5822-0.00026*T",
+							"unit": "W/(m·K)",
+							"temperature_range": "450-700 C",
+							"uncertainty": "±0.037 W/(m·K)"
+						},
+						{
+							"id": 3,
+							"property": "heat capacity",
+							"value": "1.30138-0.0005*T",
+							"unit": "J/(g·K)",
+							"temperature_range": "450-625 C",
+							"uncertainty": "±0.0358 J/(g·K)"
+						},
+						{
+							"id": 4,
+							"property": "viscosity",
+							"value": "0.70645*exp(1204.11348/(T+273.15))",
+							"unit": "cP",
+							"temperature_range": "450-700 C",
+							"uncertainty": "±0.1138 cP"
+						}
+					]
+				}
+			]
+		}
+	]
+}

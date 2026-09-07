@@ -1,0 +1,30 @@
+{
+  "source": "Assessment of Molten Eutectic LiF-NaF-KF Density through Experimental Determination and Semiempirical Modeling",
+  "url": "https://doi.org/10.1021/acs.jced.2c00081",
+  "experiment": [
+    {
+      "id": 1,
+      "name": "FLiNaK",
+      "composition": [
+        {
+          "id": 1,
+          "LiF": 0.465,
+          "NaF": 0.115,
+          "KF": 0.42,
+          "unit": "mole fraction",
+          "thermal_properties": [
+            {
+              "id": 1,
+              "property": "density",
+              "value": "2.492-6.846*10**(-4)*T",
+              "unit": "g/cm^3",
+              "temperature_range": "470-800 C",
+              "uncertainty": "0.14-0.45%",
+              "comment": "T is in degrees Celsius. The reported experimental density uncertainty ranges from 0.14% to 0.45%. The maximum relative deviation of the fitted correlation is 0.77%."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

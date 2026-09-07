@@ -1,0 +1,309 @@
+{
+	"source": "Evaluation of thermophysical properties of the LiCl-KCl system via ab initio and experimental methods",
+	"url": "https://doi.org/10.1016/j.jnucmat.2021.153414",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "LiCl-KCl",
+			"composition": [
+				{
+					"id": 1,
+					"LiCl": 0.0,
+					"KCl": 1.0,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.235-6.76*10**(-4)*(T)",
+							"unit": "g/cm^3",
+							"temperature_range": "1040-1120 K",
+							"uncertainty": "0.7%",
+							"comment": "data reported in equation form, fitting uncertainty"
+							
+						},
+						{
+							"id": 2,
+							"property": "Eutectic Temp",
+							"value": "NONE",
+							"unit": "°C",
+							"temperature_range": "NONE",
+							"uncertainty": "0.0%",
+							"comment": "Single Composition"
+
+						},
+						{
+							"id": 3,
+							"property": "Melt Temp",
+							"value": "771.0",
+							"unit": "°C",
+							"temperature_range": "1044K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						}
+					]
+				},
+				{
+					"id": 2,
+					"LiCl": 0.1,
+					"KCl": 0.9,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.133-5.88*10**(-4)*(T)",
+							"unit": "g/cm^3",
+							"temperature_range": "1020-1100 K",
+							"uncertainty": "0.7%",
+							"comment": "data reported in equation form, fitting uncertainty"
+						},
+						{
+							"id": 2,
+							"property": "Eutectic Temp",
+							"value": "354.4",
+							"unit": "°C",
+							"temperature_range": "628K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						},
+						{
+							"id": 3,
+							"property": "Melt Temp",
+							"value": "733.0",
+							"unit": "°C",
+							"temperature_range": "1006K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						}
+					]
+				},
+				{
+					"id": 3,
+					"LiCl": 0.2,
+					"KCl": 0.8,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.171-6.28*10**(-4)*(T)",
+							"unit": "g/cm^3",
+							"temperature_range": "980-1080 K",
+							"uncertainty": "0.7%",
+							"comment": "data reported in equation form, fitting uncertainty"
+						},
+						{
+							"id": 2,
+							"property": "Eutectic Temp",
+							"value": "354.6",
+							"unit": "°C",
+							"temperature_range": "628K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						},
+						{
+							"id": 3,
+							"property": "Melt Temp",
+							"value": "686.4",
+							"unit": "°C",
+							"temperature_range": "960K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						}
+					]
+				},
+				{
+					"id": 4,
+					"LiCl": 0.4,
+					"KCl": 0.6,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.070-5.14*10**(-4)*(T)",
+							"unit": "g/cm^3",
+							"temperature_range": "880-970 K",
+							"uncertainty": "0.7%",
+							"comment": "data reported in equation form, fitting uncertainty"
+						},
+						{
+							"id": 2,
+							"property": "Eutectic Temp",
+							"value": "354.6",
+							"unit": "°C",
+							"temperature_range": "628K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						},
+						{
+							"id": 3,
+							"property": "Melt Temp",
+							"value": "569.9",
+							"unit": "°C",
+							"temperature_range": "843K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						}
+					]
+				},
+				{
+					"id": 5,
+					"LiCl": 0.582,
+					"KCl": 0.418,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.010-5.12*10**(-4)*(T)",
+							"unit": "g/cm^3",
+							"temperature_range": "720-1060 K",
+							"uncertainty": "0.7%",
+							"comment": "data reported in equation form, fitting uncertainty"
+						},
+						{
+							"id": 2,
+							"property": "Eutectic Temp",
+							"value": "354.3",
+							"unit": "°C",
+							"temperature_range": "627K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						},
+						{
+							"id": 3,
+							"property": "Melt Temp",
+							"value": "354.3",
+							"unit": "°C",
+							"temperature_range": "627K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						}
+					]
+				},
+				{
+					"id": 6,
+					"LiCl": 0.8,
+					"KCl": 0.2,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "1.966-4.90*10**(-4)*(T)",
+							"unit": "g/cm^3",
+							"temperature_range": "830-1020 K",
+							"uncertainty": "0.7%",
+							"comment": "data reported in equation form, fitting uncertainty"
+						},
+						{
+							"id": 2,
+							"property": "Eutectic Temp",
+							"value": "353.5",
+							"unit": "°C",
+							"temperature_range": "628K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						},
+						{
+							"id": 3,
+							"property": "Melt Temp",
+							"value": "521.0",
+							"unit": "°C",
+							"temperature_range": "794K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						}
+					]
+				},
+				{
+					"id": 7,
+					"LiCl": 0.93,
+					"KCl": 0.07,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "1.939-4.79*10**(-4)*(T)",
+							"unit": "g/cm^3",
+							"temperature_range": "900-1020 K",
+							"uncertainty": "0.7%",
+							"comment": "data reported in equation form, fitting uncertainty"
+						},
+						{
+							"id": 2,
+							"property": "Eutectic Temp",
+							"value": "352.6",
+							"unit": "°C",
+							"temperature_range": "626K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						},
+						{
+							"id": 3,
+							"property": "Melt Temp",
+							"value": "583.4",
+							"unit": "°C",
+							"temperature_range": "856K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						}
+					]
+				},
+				{
+					"id": 8,
+					"LiCl": 1.0,
+					"KCl": 0.0,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "1.912-4.55*10**(-4)*(T)",
+							"unit": "g/cm^3",
+							"temperature_range": "900-1020 K",
+							"uncertainty": "0.7%",
+							"comment": "data reported in equation form, fitting uncertainty"
+						},
+						{
+							"id": 2,
+							"property": "Eutectic Temp",
+							"value": "NONE",
+							"unit": "°C",
+							"temperature_range": "NONE",
+							"uncertainty": "0.0%",
+							"comment": "Single Composition"
+
+						},
+						{
+							"id": 3,
+							"property": "Melt Temp",
+							"value": "604.2",
+							"unit": "°C",
+							"temperature_range": "877K",
+							"uncertainty": "0.0%",
+							"comment": "Single Data"
+
+						}
+					]
+				}
+			]
+		}
+	]
+}

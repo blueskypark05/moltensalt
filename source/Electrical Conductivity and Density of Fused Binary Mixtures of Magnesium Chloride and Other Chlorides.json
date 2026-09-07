@@ -1,0 +1,80 @@
+{
+    "source": "Electrical Conductivity and Density of Fused Binary Mixtures of Magnesium Chloride and Other Chlorides",
+    "url": "https://books.google.co.kr/books?hl=ko&lr=&id=ss6eDC1Mq-IC&oi=fnd&pg=PA3&dq=Electrical+Conductivity+and+Density+of+Fused+Binary+Mixtures+of+Magnesium+Chloride+and+Other+Chlorides&ots=qxBfDRggiU&sig=qTRpuEOCrMt1sf6WoYV2ZihI0uE&redir_esc=y#v=onepage&q&f=false",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "MgCl2-NaCl",
+            "composition":[
+                {
+                    "id": 1,
+                    "MgCl2": 75.8,
+                    "NaCl": 25.1,
+                    "comment": "원문에서 합이 100%이 아님",
+                    "unit": "weight percent",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "density",
+                            "value": "1.656-0.00043*(T-800)",
+                            "unit": "g/cm^3",
+                            "temperature_range": "730-900 C",
+                            "uncertainty": "None"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "MgCl2": 60.6,
+                    "NaCl": 37.7,
+                    "unit": "weight percent",
+                    "comment": "원문에서 합이 100%이 아님",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "density",
+                            "value": "1.618-0.00048*(T-800)",
+                            "unit": "g/cm^3",
+                            "temperature_range": "730-900 C",
+                            "uncertainty": "None"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "MgCl2": 45.7,
+                    "NaCl": 54.4,
+                    "comment": "원문에서 합이 100%이 아님",
+                    "unit": "weight percent",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "density",
+                            "value": "1.587-0.00047*(T-800)",
+                            "unit": "g/cm^3",
+                            "temperature_range": "730-900 C",
+                            "uncertainty": "None"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "MgCl2": 20.0,
+                    "NaCl": 80.2,
+                    "comment": "원문에서 합이 100%이 아님",
+                    "unit": "weight percent",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "density",
+                            "value": "1.569-0.00049*(T-800)",
+                            "unit": "g/cm^3",
+                            "temperature_range": "750-900 C",
+                            "uncertainty": "None"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

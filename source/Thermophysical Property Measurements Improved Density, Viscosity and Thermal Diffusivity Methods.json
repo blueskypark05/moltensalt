@@ -1,0 +1,54 @@
+{
+    "source": "Thermophysical Property Measurements: Improved Density, Viscosity and Thermal Diffusivity Methods",
+    "url": "https://publications.anl.gov/anlpubs/2020/12/164442.pdf",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "FLiNaK",
+            "composition": [
+                {
+                    "id": 1,
+                    "LiF": 0.4650,
+                    "NaF": 0.1150,
+                    "KF": 0.4200,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "density",
+                            "value": "2.44-6.06*10**(-4)*T",
+                            "unit": "g/cm^3",
+                            "temperature_range": "500-750 C",
+                            "uncertainty": "0.03% for 2019 measurements; 0.5% for 2020 measurements",
+			                "comment": "T is in degrees Celsius, The correlation combines the 2019 and 2020 data sets, which reported different measurement uncertainties. Also each uncertainty was unit-converted to percent by dividing by density at point"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "FLiNaK",
+            "composition": [
+                {
+                    "id": 1,
+                    "LiF": 0.4650,
+                    "NaF": 0.1150,
+                    "KF": 0.4200,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "0.0003*exp(8300/T)",
+                            "unit": "cP",
+                            "temperature_range": "873-1023 K",
+                            "uncertainty": "not reported",
+                            "comment": "T is in kelvin, R^2 = 0.9974 as a fit-quality"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+	"source": "Thermal conductivity of high temperature fluoride molten salt determined by laser flash technique",
+	"url": "https://www.sciencedirect.com/science/article/pii/S0017931015007516?via%3Dihub",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "FLiNaK",
+			"composition": [
+				{
+					"id": 1,
+					"LiF": 0.465,
+					"NaF": 0.115,
+					"KF": 0.42,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "thermal conductivity",
+							"value": "-0.350+1.3*10**-3*(T)",
+							"unit": "W/m-K",
+							"temperature_range": "773-973 K",
+							"uncertainty": "4%",
+							"comment": "상관식 온도 단위는 K"
+						}
+					]
+				}
+			]
+		}
+	]
+}

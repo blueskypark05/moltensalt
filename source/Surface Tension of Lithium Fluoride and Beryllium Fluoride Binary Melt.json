@@ -1,0 +1,97 @@
+{
+    "source": "Surface Tension of Lithium Fluoride and Beryllium Fluoride Binary Melt",
+    "url": "https://pubs.acs.org/doi/pdf/10.1021/j100218a021?casa_token=mOI9jWnXhXcAAAAA:5aQMo_mI7hZrfbRt3x2afaODw0fhwE9vmFBKjJSZpldoKYrhnbAQBTWjgJhjd3VQFbAAtwjkpMdBbuI",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "FLiBe",
+            "composition":[
+                {
+                    "id": 1,
+                    "LiF": 0.8500,
+                    "BeF2": 0.1500,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "surface tension",
+                            "value": "308-0.12*T",
+                            "unit": "dyn/cm",
+                            "temperature_range": "784-943 C",
+                            "uncertainty": "3%",
+                            "comment_uncertainty": "상관식 오차와 다른, 실험 오차만 제공하였으며 회대값 형태이고, 명확한 산출 근거는 제공되지 않음"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "LiF": 0.7500,
+                    "BeF2": 0.2500,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "surface tension",
+                            "value": "293-0.13*T",
+                            "unit": "dyn/cm",
+                            "temperature_range": "725-842 C",
+                            "uncertainty": "3%",
+                            "comment_uncertainty": "상관식 오차와 다른, 실험 오차만 제공하였으며 회대값 형태이고, 명확한 산출 근거는 제공되지 않음"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "LiF": 0.6700,
+                    "BeF2": 0.3300,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "surface tension",
+                            "value": "263-0.12*T",
+                            "unit": "dyn/cm",
+                            "temperature_range": "500-800 C",
+                            "uncertainty": "3%",
+                            "comment_uncertainty": "상관식 오차와 다른, 실험 오차만 제공하였으며 회대값 형태이고, 명확한 산출 근거는 제공되지 않음"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "LiF": 0.5000,
+                    "BeF2": 0.5000,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "surface tension",
+                            "value": "265-0.12*T",
+                            "unit": "dyn/cm",
+                            "temperature_range": "558-794 C",
+                            "uncertainty": "3%",
+                            "comment_uncertainty": "상관식 오차와 다른, 실험 오차만 제공하였으며 회대값 형태이고, 명확한 산출 근거는 제공되지 않음"
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "LiF": 0.3300,
+                    "BeF2": 0.6700,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "surface tension",
+                            "value": "288-0.13*T",
+                            "unit": "dyn/cm",
+                            "temperature_range": "702-786 C",
+                            "uncertainty": "3%",
+                            "comment_uncertainty": "상관식 오차와 다른, 실험 오차만 제공하였으며 회대값 형태이고, 명확한 산출 근거는 제공되지 않음"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

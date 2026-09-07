@@ -1,0 +1,30 @@
+{
+	"source": "Viscosity measurements on molten fluoride mixtures",
+	"url": "https://www.osti.gov/servlets/purl/4803933/",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "NaF-KF-UF4",
+			"composition": [
+				{
+					"id": 1,
+					"NaF": 0.465,
+					"KF": 0.26,
+					"UF4": 0.275,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "viscosity",
+							"value": "0.0767*exp(4731/(T))",
+							"unit": "mPa*s",
+							"temperature_range": "873.15-1173.15 K",
+							"uncertainty": "10%",
+							"comment": "상관식 온도 단위는 K"
+						}
+					]
+				}
+			]
+		}
+	]
+}

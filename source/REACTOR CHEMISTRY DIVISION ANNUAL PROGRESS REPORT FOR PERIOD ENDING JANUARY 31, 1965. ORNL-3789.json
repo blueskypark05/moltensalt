@@ -1,0 +1,301 @@
+{
+    "source": "REACTOR CHEMISTRY DIVISION ANNUAL PROGRESS REPORT FOR PERIOD ENDING JANUARY 31, 1965. ORNL-3789",
+    "url": "https://www.osti.gov/servlets/purl/4616564",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "FLiBe",
+            "composition":[
+                {
+                    "id": 1,
+                    "LiF": 0,
+                    "BeF2": 1.0000,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(13100/T-7.05)",
+                            "unit": "centipoise",
+                            "temperature_range": "985-1102 K",
+                            "uncertainty": "None",
+                            "comment_uncertainty": "viscosity가 너무 높아서 정확도가 매우 낮음"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "LiF": 0.0099,
+                    "BeF2": 0.9901,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(11390/T-5.955)",
+                            "unit": "centipoise",
+                            "temperature_range": "965-1240 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "LiF": 0.0199,
+                    "BeF2": 0.9801,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(10300/T-5.135)",
+                            "unit": "centipoise",
+                            "temperature_range": "905-1190 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "LiF": 0.0300,
+                    "BeF2": 0.9700,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(9540/T-4.595)",
+                            "unit": "centipoise",
+                            "temperature_range": "874-1170 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "LiF": 0.0399,
+                    "BeF2": 0.9601,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(8995/T-4.29)",
+                            "unit": "centipoise",
+                            "temperature_range": "874-1117 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "LiF": 0.0509,
+                    "BeF2": 0.9491,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(8620/T-4.13)",
+                            "unit": "centipoise",
+                            "temperature_range": "830-1110 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "LiF": 0.0699,
+                    "BeF2": 0.9301,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(8185/T-3.96)",
+                            "unit": "centipoise",
+                            "temperature_range": "845-1115 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "LiF": 0.0898,
+                    "BeF2": 0.9102,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(7690/T-3.77)",
+                            "unit": "centipoise",
+                            "temperature_range": "818-1105 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "LiF": 0.0998,
+                    "BeF2": 0.9002,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(7405/T-3.65)",
+                            "unit": "centipoise",
+                            "temperature_range": "867-1155 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "LiF": 0.1500,
+                    "BeF2": 0.8500,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(6580/T-3.37)",
+                            "unit": "centipoise",
+                            "temperature_range": "812-1020 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "LiF": 0.2001,
+                    "BeF2": 0.7999,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(5950/T-3.185)",
+                            "unit": "centipoise",
+                            "temperature_range": "831-1018 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "LiF": 0.2500,
+                    "BeF2": 0.7500,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(5405/T-3.085)",
+                            "unit": "centipoise",
+                            "temperature_range": "763-978 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "LiF": 0.3000,
+                    "BeF2": 0.7000,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(4695/T-2.695)",
+                            "unit": "centipoise",
+                            "temperature_range": "753-977 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 14,
+                    "LiF": 0.3500,
+                    "BeF2": 0.6500,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(4150/T-2.45)",
+                            "unit": "centipoise",
+                            "temperature_range": "724-997 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 15,
+                    "LiF": 0.4000,
+                    "BeF2": 0.6000,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(3775/T-2.35)",
+                            "unit": "centipoise",
+                            "temperature_range": "710-857 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 16,
+                    "LiF": 0.4499,
+                    "BeF2": 0.5501,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(3390/T-2.22)",
+                            "unit": "centipoise",
+                            "temperature_range": "662-857 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                },
+                {
+                    "id": 17,
+                    "LiF": 0.5000,
+                    "BeF2": 0.5000,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "viscosity",
+                            "value": "10**(3065/T-2.08)",
+                            "unit": "centipoise",
+                            "temperature_range": "649-850 K",
+                            "uncertainty": "10%",
+                            "comment_uncertainty": "명확한 오차 정의 방안이 없음. 해당 범위 안에 실제 값이 있을 것이라는 추측 정도"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "source": "Methodology for Highly Accurate Specific Heat Measurements for Molten Salts Examples for FLiNaK and NaCl–MgCl2",
+    "url": "https://link-springer-com.libra.kaist.ac.kr/content/pdf/10.1007/s10765-026-03805-8.pdf",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "FLiNaK",
+            "composition":[
+                {
+                    "id": 1,
+                    "LiF": 0.465,
+                    "NaF": 0.115,
+                    "KF": 0.420,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "heat capacity",
+                            "value": "1.875-7.808*10**(-5)*T",
+                            "unit": "J/g·K",
+                            "temperature_range": "738.4-871.8 K",
+                            "uncertainty": "1.74%",
+                            "comment_uncertainty": "expanded uncertainty, k = 2. 장비 오차, 측정값과 상관식 사이 회귀 오차를 모두 합산한 값"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "MgCl2-NaCl",
+            "composition":[
+                {
+                    "id": 1,
+                    "NaCl": 0.58,
+                    "MgCl2": 0.42,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "heat capacity",
+                            "value": "1.684-6.23106*10**(-4)*T",
+                            "unit": "J/g·K",
+                            "temperature_range": "745.6-871.7 K",
+                            "uncertainty": "1.93%",
+                            "comment_uncertainty": "expanded uncertainty, k = 2. 장비 오차, 측정값과 상관식 사이 회귀 오차를 모두 합산한 값"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

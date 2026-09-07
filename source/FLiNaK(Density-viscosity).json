@@ -1,0 +1,37 @@
+{
+	"source": "Density and Viscosity of the (LiF + NaF + KF)eut (1) + K2TaF7 (2) + Ta2O5 (3) Melts",
+	"url": "https://pubs.acs.org/doi/10.1021/je050490g",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "FLiNaK",
+			"composition": [
+				{
+					"id": 1,
+					"LiF": 0.465,
+					"NaF": 0.115,
+					"KF": 0.42,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "2.5793-6.240*10**-4*(T)",
+							"unit": "g/cm^3",
+							"temperature_range": "933-1163 K",
+							"uncertainty": "0.025%"
+						},
+						{
+							"id": 2,
+							"property": "viscosity",
+							"value": "exp(-3.0489+3847/T)",
+							"unit": "Pa*s",
+							"temperature_range": "933-1163 K",
+							"uncertainty": "2.5%"	
+						}
+					]
+				}
+			]
+		}
+	]
+}

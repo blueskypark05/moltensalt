@@ -1,0 +1,39 @@
+{
+	"source": "Heats of fusion and heat capacities of lithium chloride-potassium chloride eutectic and potassium nitrate.",
+	"url": "https://doi.org/10.1021/je60056a023",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "LiCl-KCl",
+			"composition": [
+				{
+					"id": 1,
+					"LiCl": 59.0,
+					"KCl": 41.0,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "heat capacity",
+							"value": "17.3",
+							"unit": "cal/(mol*deg)",
+							"temperature_range": "625-853 K",
+							"uncertainty": "+-0.6",
+							"comment": "In liquid. Soild, 12.3+-0.2"
+							
+						},
+						{
+							"id": 2,
+							"property": "Heats for fusion",
+							"value": "3.10",
+							"unit": "kcal/mol",
+							"temperature_range": "NONE",
+							"uncertainty": "+-0.2"
+
+						}
+					]
+				}
+			]
+		}
+	]
+}

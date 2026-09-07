@@ -1,0 +1,38 @@
+{
+    "source": "NATIONAL BUREAU OF STANDARDS REPORT-8186",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/RPT/nbsreport8186.pdf",
+    "experiment": [
+        {
+            "id": 1,
+            "name": "FLiBe",
+            "composition":[
+                {
+                    "id": 1,
+                    "LiF": 0.66,
+                    "BeF2": 0.34,
+                    "unit": "mole fraction",
+                    "thermal_properties": [
+                        {
+                            "id": 1,
+                            "property": "heat capacity",
+                            "value": "21.676+0.03572*T",
+                            "unit": "cal/mol*K",
+                            "temperature_range": "273-745 K",
+                            "uncertainty": "3%",
+                            "comment": "uncertainty는 해당 보고서에는 나와있지 않으나 ORNL-2316 보고서에서 인용한 바에 따르면 3%로 추정됨. 해당 오차는 상관식의 오차임. 고체에서의 범위로 상단은 녹는점으로 봐야 타당함"
+                        },
+                        {
+                            "id":2,
+                            "property": "heat capacity",
+                            "value": "55.500",
+                            "unit": "cal/mol*K",
+                            "temperature_range": "745-873 K",
+                            "uncertainty": "3%",
+                            "comment": "uncertainty는 해당 보고서에는 나와있지 않으나 ORNL-2316 보고서에서 인용한 바에 따르면 3%로 추정됨. 해당 오차는 상관식의 오차임. 엑체에서의 범위로 하단은 녹는점으로 봐야 타당함"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

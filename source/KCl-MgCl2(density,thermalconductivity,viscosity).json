@@ -1,0 +1,108 @@
+{
+	"source": "Thermal properties of KCl–MgCl2 eutectic salt for high-temperature heat transfer and thermal storage system",
+	"url": "https://doi.org/10.1016/j.solmat.2021.111130",
+	"experiment": [
+		{
+			"id": 1,
+			"name": "KCl-MgCl2",
+			"composition": [
+				{
+					"id": 1,
+					"KCl": 0.352,
+					"MgCl2": 0.648,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "1.52216-3.25628*10**(-4)*T+1.13613*(0.648)-0.90748*(0.648)**2",
+							"unit": "g/cm^3",
+							"temperature_range": "773-1273 K",
+							"uncertainty": "7.46%"
+						},
+						{
+							"id": 2,
+							"property": "thermal conductivity",
+							"value": "0.32707-1.21192*10**(-4)*T+0.30846*(0.352)",
+							"unit": "W/(m·K)",
+							"temperature_range": "773-1273 K",
+							"uncertainty": "< 8%"
+						},
+						{
+							"id": 3,
+							"property": "viscosity",
+							"value": "18.604-0.04263*T+2.2644*10**(-5)*T**2+39.994*(0.648)+0.73847*(0.648)**2-0.03082*T*(0.648)",
+							"unit": "mPa·s",
+							"temperature_range": "773-1273 K",
+							"uncertainty": "< 8%"
+						}
+					]
+				},
+				{
+					"id": 2,
+					"KCl": 0.460,
+					"MgCl2": 0.540,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "1.52216-3.25628*10**(-4)*T+1.13613*(0.540)-0.90748*(0.540)**2",
+							"unit": "g/cm^3",
+							"temperature_range": "773-1273 K",
+							"uncertainty": "5.56%"
+						},
+						{
+							"id": 2,
+							"property": "thermal conductivity",
+							"value": "0.32707-1.21192*10**(-4)*T+0.30846*(0.460)",
+							"unit": "W/(m·K)",
+							"temperature_range": "773-1273 K",
+							"uncertainty": "< 8%"
+						},
+						{
+							"id": 3,
+							"property": "viscosity",
+							"value": "18.604-0.04263*T+2.2644*10**(-5)*T**2+39.994*(0.540)+0.73847*(0.540)**2-0.03082*T*(0.540)",
+							"unit": "mPa·s",
+							"temperature_range": "773-1273 K",
+							"uncertainty": "< 8%"
+						}
+					]
+				},
+				{
+					"id": 3,
+					"KCl": 0.680,
+					"MgCl2": 0.320,
+					"unit": "mole fraction",
+					"thermal_properties": [
+						{
+							"id": 1,
+							"property": "density",
+							"value": "1.52216-3.25628*10**(-4)*T+1.13613*(0.320)-0.90748*(0.320)**2",
+							"unit": "g/cm^3",
+							"temperature_range": "773-1273 K",
+							"uncertainty": "3.77%"
+						},
+						{
+							"id": 2,
+							"property": "thermal conductivity",
+							"value": "0.32707-1.21192*10**(-4)*T+0.30846*(0.680)",
+							"unit": "W/(m·K)",
+							"temperature_range": "823-1273 K",
+							"uncertainty": "2.5%-8.0%"
+						},
+						{
+							"id": 3,
+							"property": "viscosity",
+							"value": "18.604-0.04263*T+2.2644*10**(-5)*T**2+39.994*(0.320)+0.73847*(0.320)**2-0.03082*T*(0.320)",
+							"unit": "mPa·s",
+							"temperature_range": "773-1273 K",
+							"uncertainty": "< 8%"
+						}
+					]
+				}
+			]
+		}
+	]
+}
