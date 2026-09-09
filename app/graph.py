@@ -52,7 +52,7 @@ class GraphCanvas(FigureCanvas):
 
 def create_graph_canvases(data, graph_type):
     export_data = []
-    if graph_type == "raw data":
+    if graph_type == "raw data" or graph_type == "composition":
         for item in data:
             fig = Figure(figsize=(5, 4), dpi=100)
             canvas = GraphCanvas(fig)

@@ -4,7 +4,7 @@ from app.file_widget import FileWidget
 from core.make_tree import make_tree
 from app.dialogs import critical
 from app.select_widget import SelectWindow
-from core.data_calculation import calculate_raw_data
+from core.data_calculation import calculate_raw_data, calculate_composition_data
 from app.graph import create_graph_canvases
 
 class MainWidget(QWidget):
@@ -42,7 +42,7 @@ class MainWidget(QWidget):
         layout.addWidget(btn2)
 
         self.select_combobox = QComboBox(self)
-        self.select_combobox.addItems(['raw data'])
+        self.select_combobox.addItems(['raw data', "composition"])
         layout.addWidget(self.select_combobox)
 
         btn3 = QPushButton('run', self)
@@ -128,7 +128,14 @@ class MainWidget(QWidget):
                 critical("Data Processing Error", str(e), self)
                 return
             self.display_graph_canvases(graph_canvases)
-        return
+        elif self.select_combobox.currentText() == "composition":
+            try:
+                graph_data = calculate_composition_data(self.data, min_temp, max_temp, self.config)
+                graph_canvases = create_graph_canvases(graph_data, "composition")
+            except ValueError as e:
+                critical("Data Processing Error", str(e), self)
+                return
+            self.display_graph_canvases(graph_canvases)
 
     def display_graph_canvases(self, graph_canvases):
         self.clear_graphs()
