@@ -3,7 +3,7 @@ import numpy as np
 import numexpr as ne
 
 
-def _calculate_correlation(property_name, name, composition, correlation, config, step, temperature_bounds=None):
+def calculate_correlation(property_name, name, composition, correlation, config, step, temperature_bounds=None):
     correlation_index = correlation["index"]
 
     try:
@@ -63,7 +63,7 @@ def calculate_raw_data(data, min_temp, max_temp, config, step=0.01):
                     if not correlation["selected"]:
                         continue
 
-                    result = _calculate_correlation(property_name, name, composition, correlation, config, step, temperature_bounds=(min_temp, max_temp))
+                    result = calculate_correlation(property_name, name, composition, correlation, config, step, temperature_bounds=(min_temp, max_temp))
                     if result is None:
                         continue
 
@@ -92,7 +92,7 @@ def calculate_composition_data(data, min_temp, max_temp, config, step=0.01):
                     if not correlation["selected"]:
                         continue
 
-                    result = _calculate_correlation(property_name, name, composition, correlation, config, step)
+                    result = calculate_correlation(property_name, name, composition, correlation, config, step)
                     if result is None:
                         continue
 
@@ -100,7 +100,11 @@ def calculate_composition_data(data, min_temp, max_temp, config, step=0.01):
                     x.append([out_temp, value, label])
                     y.append([out_temp, value, correlation["weight"]])
 
-                if not x:
+                if len(y) == 0:
+                    continue
+                if len(y) == 1:
+                    x.append([rf"{property_name}{composition} ({config["base_units"][property_name]})", rf"{property_name} vs temperature", [min_temp, max_temp]])
+                    export_data.append(x)
                     continue
 
                 all_temp = np.arange(min(item[0][0] for item in y), max(item[0][-1] for item in y) + step / 2, step)
@@ -112,9 +116,40 @@ def calculate_composition_data(data, min_temp, max_temp, config, step=0.01):
                     valid = ~np.isnan(item_interp)
                     weighted_sum[valid] += item_interp[valid] * item[2]
                     weight_sum[valid] += item[2]
+                weighted_average = np.full_like(all_temp, np.nan, dtype=float)
+                np.divide(weighted_sum, weight_sum, out=weighted_average, where=weight_sum > 0)
+                x.append([all_temp, weighted_average, rf"{name}{composition}, weighted average"])
 
-                x.append([all_temp, weighted_sum / weight_sum, rf"{name}{composition}, weighted average"])
-                x.append([rf"{property_name}{composition} ({config["base_units"][property_name]})", rf"{property_name} vs temperature", [min_temp, max_temp]])
+                coeffs = approx_correlation(property_name, (all_temp, weighted_average), config)
+                if config["correlation_model"][property_name]["model"] == "arrhenius":
+                    inverse_temp = 1 / all_temp
+                    correlation_value = np.exp(np.polyval(coeffs, inverse_temp))
+                else:
+                    correlation_value = np.polyval(coeffs, all_temp)
+                x.append([all_temp, correlation_value, rf"{name}{composition}, fitted correlation"])
+                x.append([rf"{property_name}{composition} ({config["base_units"][property_name]})", rf"{property_name} vs temperature", [min_temp, max_temp]])                
                 export_data.append(x)
 
     return export_data
+
+def approx_correlation(property, data, config):
+    correlation_model = config["correlation_model"][property]
+    model_type = correlation_model["model"]
+    degree = correlation_model["degree"]
+
+    valid = np.isfinite(data[0]) & np.isfinite(data[1])
+    if np.count_nonzero(valid) < degree + 1:
+        raise ValueError("No valid data points for correlation fitting.")
+    if model_type == "polynomial":
+        coeffs = np.polyfit(data[0][valid], data[1][valid], degree)
+        return coeffs
+    elif model_type == "arrhenius":
+        pos = valid & (data[0] > 0) & (data[1] > 0)
+        if np.count_nonzero(pos) < degree + 1:
+            raise ValueError("Not enough valid data points for Arrhenius fitting.")
+        inverse = 1 / data[0][pos]
+        log_values = np.log(data[1][pos])
+        coeffs = np.polyfit(inverse, log_values, degree)
+        return coeffs
+    else:
+        raise ValueError(f"Unsupported correlation model: {model_type}")

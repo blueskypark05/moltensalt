@@ -44,5 +44,12 @@
         "surface tension": "$dyn/cm$",
         "thermal conductivity": "$W/(m·K)$",
         "heat capacity": "$J/(g·K)$"
+    },
+    "correlation_model":{
+        "density": {"model": "polynomial", "degree": 2},
+        "viscosity": {"model": "arrhenius", "degree": 2},
+        "surface tension": {"model": "polynomial", "degree": 2},
+        "thermal conductivity": {"model": "polynomial", "degree": 2},
+        "heat capacity": {"model": "polynomial","degree": 2}
     }
 }
