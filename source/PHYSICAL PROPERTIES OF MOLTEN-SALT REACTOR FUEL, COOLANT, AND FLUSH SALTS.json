@@ -27,7 +27,7 @@
                             "property": "thermal conductivity",
                             "value": 0.010,
                             "unit": "W/cm-K",
-                            "temperature_range": "573 K",
+                            "temperature_range": "463-483 K",
                             "uncertainty": "10%",
                             "comment_uncertainty":"systematic error와 random error를 합산한 값으로, 신뢰 수준은 명시되지 않음, 상관식 오차가 아님",
                             "comment": "온도에 따른 변화가 오차율보다 적었음. 200°C 근처 구간에서 값"

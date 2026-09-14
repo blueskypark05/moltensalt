@@ -52,19 +52,36 @@ class GraphCanvas(FigureCanvas):
 
 def create_graph_canvases(data, graph_type):
     export_data = []
-    if graph_type == "raw data" or graph_type == "composition":
-        for item in data:
-            fig = Figure(figsize=(5, 4), dpi=100)
-            canvas = GraphCanvas(fig)
-            canvas.setMinimumHeight(400)
-            ax = fig.add_subplot(111)
-            ax.set_xlabel("Temperature (K)")
-            ax.set_ylabel(rf"{item[-1][0]}")
-            ax.set_title(rf"{item[-1][1]}")
-            ax.grid(True, which='both', linestyle='--', linewidth=0.5)
-            ax.set_xlim(item[-1][2][0], item[-1][2][1])
+    for item in data:
+        fig = Figure(figsize=(5, 4), dpi=100)
+        canvas = GraphCanvas(fig)
+        canvas.setMinimumHeight(400)
+        ax = fig.add_subplot(111)
+        ax.set_xlabel("Temperature (K)")
+        ax.set_ylabel(rf"{item[-1][0]}")
+        ax.set_title(rf"{item[-1][1]}")
+        ax.grid(True, which='both', linestyle='--', linewidth=0.5)
+        ax.set_xlim(item[-1][2][0], item[-1][2][1])
+        if graph_type == 'composition' and len(item) > 2:
+            color = None
+            for i in range(len(item)-5):
+                if color is None:
+                    graph = ax.plot(item[i][0], item[i][1])
+                    color = graph[0].get_color()
+                else:
+                    ax.plot(item[i][0], item[i][1], color=color)
+            i+=1
+            ax.plot(item[i][0], item[i][1], color=color, label=rf"{item[-1][3]}")
+            for n in range(2):
+                i+=1
+                line = ax.plot(item[i][0], item[i][1], label=rf"{item[i][2]}")
+            color = line[0].get_color()
+            i+=1
+            ax.fill_between(item[i][0], item[i][1], item[i][2], color=color, alpha=0.2)
+        else:
             for i in range(len(item)-1):
                 ax.plot(item[i][0], item[i][1], label=rf"{item[i][2]}")
-            ax.legend()
-            export_data.append(canvas)
+
+        ax.legend()
+        export_data.append(canvas)
     return export_data

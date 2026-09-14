@@ -3,7 +3,7 @@ import numpy as np
 import numexpr as ne
 
 
-def calculate_correlation(property_name, name, composition, correlation, config, step, temperature_bounds=None):
+def calculate_correlation(property_name, name, composition, correlation, config, step, temperature_bounds=None, type='raw'):
     correlation_index = correlation["index"]
 
     try:
@@ -47,8 +47,10 @@ def calculate_correlation(property_name, name, composition, correlation, config,
             raise ValueError("Temperature and result lengths do not match.")
     except Exception as e:
         raise ValueError(f"Error converting units at {correlation_index}: {e}")
-
-    label = rf"{name}{composition}, {correlation_index}"
+    if type == 'raw':
+        label = rf"{name}{composition}, {correlation_index}"
+    elif type == 'correlation_raw':
+        label = rf"{correlation_index}"
     return out_temp, value, label
 
 
@@ -63,7 +65,7 @@ def calculate_raw_data(data, min_temp, max_temp, config, step=0.01):
                     if not correlation["selected"]:
                         continue
 
-                    result = calculate_correlation(property_name, name, composition, correlation, config, step, temperature_bounds=(min_temp, max_temp))
+                    result = calculate_correlation(property_name, name, composition, correlation, config, step, temperature_bounds=(min_temp, max_temp), type='raw')
                     if result is None:
                         continue
 
@@ -87,16 +89,18 @@ def calculate_composition_data(data, min_temp, max_temp, config, step=0.01):
                 correlation_list = data[property_name][name][composition]
                 x = []
                 y = []
+                index = []
 
                 for correlation in correlation_list:
                     if not correlation["selected"]:
                         continue
 
-                    result = calculate_correlation(property_name, name, composition, correlation, config, step)
+                    result = calculate_correlation(property_name, name, composition, correlation, config, step, type='correlation_raw')
                     if result is None:
                         continue
 
                     out_temp, value, label = result
+                    index.append(label)
                     x.append([out_temp, value, label])
                     y.append([out_temp, value, correlation["weight"]])
 
@@ -118,7 +122,7 @@ def calculate_composition_data(data, min_temp, max_temp, config, step=0.01):
                     weight_sum[valid] += item[2]
                 weighted_average = np.full_like(all_temp, np.nan, dtype=float)
                 np.divide(weighted_sum, weight_sum, out=weighted_average, where=weight_sum > 0)
-                x.append([all_temp, weighted_average, rf"{name}{composition}, weighted average"])
+                x.append([all_temp, weighted_average, rf"weighted average"])
 
                 coeffs = approx_correlation(property_name, (all_temp, weighted_average), config)
                 if config["correlation_model"][property_name]["model"] == "arrhenius":
@@ -126,8 +130,10 @@ def calculate_composition_data(data, min_temp, max_temp, config, step=0.01):
                     correlation_value = np.exp(np.polyval(coeffs, inverse_temp))
                 else:
                     correlation_value = np.polyval(coeffs, all_temp)
-                x.append([all_temp, correlation_value, rf"{name}{composition}, fitted correlation"])
-                x.append([rf"{property_name}{composition} ({config["base_units"][property_name]})", rf"{property_name} vs temperature", [min_temp, max_temp]])                
+                x.append([all_temp, correlation_value, rf"fitted correlation"])
+                std = np.sqrt(np.nanmean((weighted_average - correlation_value) ** 2))
+                x.append([all_temp, correlation_value + 2*std, correlation_value - 2*std])
+                x.append([rf"{property_name}{composition} ({config["base_units"][property_name]})", rf"{property_name} vs temperature", [min_temp, max_temp], str(', '.join(index))])                
                 export_data.append(x)
 
     return export_data

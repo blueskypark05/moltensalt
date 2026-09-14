@@ -8,8 +8,8 @@
 			"composition": [
 				{
 					"id": 1,
-					"LiCl": 59.0,
-					"KCl": 41.0,
+					"LiCl": 0.59,
+					"KCl": 0.41,
 					"unit": "mole fraction",
 					"thermal_properties": [
 						{
